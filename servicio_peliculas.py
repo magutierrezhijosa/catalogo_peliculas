@@ -52,8 +52,23 @@ class ServicioPeliculas:
 
     # Metodo para listar_peliculas()
     def listar_peliculas(self):
+
+        # Agregamos una validacion para que no  intente imprimir si la lista esta vacia
+        if not self.peliculas:
+            print("No hay peliculas en el catalogo")
+            return
+
         print("--- Peliculas en el catalogo ---")
         for pelicula in self.peliculas:
             print(pelicula)
 
     # Metodo eliminar_peliculas()
+    # Vamos a utilizar el modulo os que nos permite trabajar con archivos 
+    # y carpetas del sistema
+    def  eliminar_peliculas(self):
+        if os.path.exists(self.NOMBRE_ARCHIVO):
+            os.remove(self.NOMBRE_ARCHIVO)
+            self.peliculas = []
+            print(f"El archivo {self.NOMBRE_ARCHIVO} ha sido borrado correctamente")
+        else:
+            print(f"El archivo {self.NOMBRE_ARCHIVO} no existe")

@@ -39,7 +39,7 @@ class AppCatalogoPeliculas:
         elif opcion == 2:
             self.servicio_peliculas.listar_peliculas()
         elif opcion == 3:   
-            pass
+            self.servicio_peliculas.eliminar_peliculas()
         elif opcion == 4:
             print("Hasta la proxima !")
             return True
@@ -52,7 +52,7 @@ class AppCatalogoPeliculas:
         nombre = input("Nombre de la pelicula:   ")
         nueva_pelicula = Pelicula(nombre)
         self.servicio_peliculas.agregar_pelicula(nueva_pelicula)
-        print("Pelicula agregada correcttamente")
+        print("Pelicula agregada correctamente")
 
 # Programa principal
 if __name__ == "__main__":
