@@ -37,8 +37,8 @@ class AppCatalogoPeliculas:
         if opcion == 1:
             self.agregar_pelicula()
         elif opcion == 2:
-            pass
-        elif opcion == 3:
+            self.servicio_peliculas.listar_peliculas()
+        elif opcion == 3:   
             pass
         elif opcion == 4:
             print("Hasta la proxima !")

@@ -4,6 +4,6 @@ class Pelicula:
         self.nombre = nombre
 
     def __str__(self):
-        return (f"Pelicula: nombre = {self.nombre}")
+        return (f"Pelicula: nombre => {self.nombre}")
     
     

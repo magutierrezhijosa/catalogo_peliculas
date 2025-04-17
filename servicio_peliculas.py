@@ -12,9 +12,10 @@ class ServicioPeliculas:
         # Revisar si ya existe el archivo peliculas
         # Si ya existe, obtenemos las peliculas del archivo
         if os.path.isfile(self.NOMBRE_ARCHIVO):
-            self.peliculas 
+            self.peliculas = self.obtener_peliculas()
+        else:
+            print("No hay peliculas todavia")
 
-        pass
 
     # Funcion que utilzamos 
     def obtener_peliculas(self):
