@@ -46,10 +46,13 @@ class ServicioPeliculas:
     # Metodo  para agregar_pelicula()
     def agregar_pelicula(self,pelicula):
         self.peliculas.append(pelicula)
+        self.guardar_peliculas_archivo([pelicula])
 
 
     # Metodo para listar_peliculas()
-
-
+    def listar_peliculas(self):
+        print("--- Peliculas en el catalogo ---")
+        for pelicula in self.peliculas:
+            print(pelicula)
 
     # Metodo eliminar_peliculas()
