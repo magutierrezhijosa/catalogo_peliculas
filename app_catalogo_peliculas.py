@@ -24,14 +24,18 @@ class AppCatalogoPeliculas:
     # Funcion que nos mostrara en pantalla el menu  junto con un imput 
     # donde vamos a introducir la opcion que queremos 
     def mostrar_menu(self):
-        print(f"""Menu:
+        print(f"""--- MENU DE PELICULAS ---
               1. Agregar pelicula
               2. Listar peliculas
               3. Eliminar peliculas
               4. Salir
               """)
-        return int(input("Elige una opcion: "))
+        opcion =  input("Elige una opcion: ")
     
+        if opcion.isdigit():
+            return int(opcion)
+        else:
+            print("Por favor, introduce un numero valido.")
     # Funcion que recoge la opcion y ejecuta el metodo correspondiente
     def ejecutar_opcion(self,opcion):
         if opcion == 1:
