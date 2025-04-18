@@ -32,6 +32,8 @@ class AppCatalogoPeliculas:
               """)
         opcion =  input("Elige una opcion: ")
     
+        # Comprobamos que el valor introducido sea un numero 
+        # sino mandamos un mensaje de error 
         if opcion.isdigit():
             return int(opcion)
         else:
