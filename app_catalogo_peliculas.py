@@ -53,7 +53,7 @@ class AppCatalogoPeliculas:
             print(f"Opcion no valida: {opcion}")
 
 
-        input("\nPresiona Enter para continuar ....1")
+        input("\nPresiona Enter para continuar ....")
         return False
     
     # Funcion para agregar snacks 
